@@ -1,9 +1,13 @@
-import { exec } from 'child_process';
+import { exec } from "child_process";
+import { fileURLToPath } from "url";
+import path from "path";
 
-const scriptPath = '../scripts/update-imports.js';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const scriptPath = path.join(__dirname, "../scripts/update-imports.js");
 
 const args = process.argv.slice(2);
-const command = `node ${scriptPath} ${args.join(' ')}`;
+const command = `node ${scriptPath} ${args.join(" ")}`;
 
 exec(command, (error, stdout, stderr) => {
   if (error) {

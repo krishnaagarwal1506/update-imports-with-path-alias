@@ -1,11 +1,11 @@
 {
   "name": "update-imports-with-path-alias",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "description": "A CLI tool for updating TypeScript import paths based on path aliases.",
+  "description": "NPX tool for updating TypeScript import paths based on path aliases defined in tsconfig.json",
   "main": "src/cli.js",
   "bin": {
-    "update-imports-with-path-alias": "./bin/ts-path-alias"
+    "update-imports": "./bin/ts-path-alias"
   },
   "scripts": {
     "start": "node src/cli.js"
@@ -18,9 +18,12 @@
   },
   "keywords": [
     "typescript",
-    "cli",
+    "npx",
     "path-alias",
-    "import"
+    "import",
+    "tsconfig",
+    "refactor",
+    "migration"
   ],
   "author": "Your Name",
   "license": "MIT"
