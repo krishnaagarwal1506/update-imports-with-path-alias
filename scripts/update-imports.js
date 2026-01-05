@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // Use current working directory (where user runs npx command)
 const repoRoot = process.cwd();
-const tsconfigPath = path.join(repoRoot, "tsconfig.json");
+const tsconfigPath = path.join(repoRoot, "tsconfig.app.json");
 
 function stripJsonComments(str) {
   return str.replace(/\/\*[\s\S]*?\*\//g, "").replace(/\/\/.*$/gm, "");
