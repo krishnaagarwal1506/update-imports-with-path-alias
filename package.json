@@ -1,6 +1,6 @@
 {
   "name": "update-imports-with-path-alias",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "NPX tool for updating TypeScript import paths based on path aliases defined in tsconfig.json",
   "main": "src/cli.js",
